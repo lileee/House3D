@@ -79,11 +79,11 @@ bool ObjLoader::load(string fname) {
 }
 
 void ObjLoader::printInfo() const {
-  printf("# of vertices  = %d\n", (int)(attrib.vertices.size()) / 3);
-  printf("# of normals   = %d\n", (int)(attrib.normals.size()) / 3);
-  printf("# of texcoords = %d\n", (int)(attrib.texcoords.size()) / 2);
-  printf("# of materials = %d\n", (int)materials.size());
-  printf("# of shapes    = %d\n", (int)shapes.size());
+  //printf("# of vertices  = %d\n", (int)(attrib.vertices.size()) / 3);
+  //printf("# of normals   = %d\n", (int)(attrib.normals.size()) / 3);
+  //printf("# of texcoords = %d\n", (int)(attrib.texcoords.size()) / 2);
+  //printf("# of materials = %d\n", (int)materials.size());
+  //printf("# of shapes    = %d\n", (int)shapes.size());
 }
 
 TriangleFace ObjLoader::convertFace(
@@ -164,7 +164,7 @@ void ObjLoader::split_shapes_by_material() {
       // ignore mesh_t::tags
     }
   }
-  print_debug("Split shapes by material: %lu -> %lu\n", shapes.size(), new_shapes.size());
+  //print_debug("Split shapes by material: %lu -> %lu\n", shapes.size(), new_shapes.size());
   std::swap(shapes, new_shapes);
 }
 

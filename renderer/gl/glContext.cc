@@ -172,7 +172,7 @@ EGLContext::EGLContext(Geometry win_size, int device): GLContext{win_size} {
     }
 
     if (static_cast<int>(visible_devices.size()) == numDevices) {
-      cerr << "[EGL] Detected " << numDevices << " devices. Using device " << device << endl;
+      //cerr << "[EGL] Detected " << numDevices << " devices. Using device " << device << endl;
     } else {
       cerr << "[EGL] " << visible_devices.size() << " out of " << numDevices <<
           " devices are accessible. Using device " << device << " whose physical id is " << visible_devices[device] << "." << endl;
