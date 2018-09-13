@@ -40,7 +40,7 @@ class ModelCategory final {
               auto itr = coarse_grained_class_.find(name);
               if (itr != coarse_grained_class_.end())
                 if (categories.count(itr->second)) {
-                  print_debug("Removing %s of class %s\n", shape.name.c_str(), itr->second.c_str());
+                  //print_debug("Removing %s of class %s\n", shape.name.c_str(), itr->second.c_str());
                   return true;
                 }
               return false;
